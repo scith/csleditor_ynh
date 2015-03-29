@@ -24,8 +24,7 @@ sudo apt-get install jekyll -y
 final_path=/var/www/$app
 sudo mkdir -p $final_path
 sudo git clone --recursive https://github.com/citation-style-editor/csl-editor-demo-site.git csl-demo
-cd csl-demo
-sudo ./deploy.sh $final_path
+sudo ./csl-demo/deploy.sh $final_path
 
 # Files owned by www-data
 sudo chown -R 755 $final_path

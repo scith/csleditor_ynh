@@ -13,7 +13,7 @@ path=${path%/}
 final_path=/var/www/$app
 sudo mkdir -p $final_path
 sudo git clone --recursive https://github.com/citation-style-editor/csl-editor-demo-site.git csl-demo
-sudo ./deploy.sh $final_path
+sudo ./csl-demo/deploy.sh $final_path
 
 #configure nginx settings
 sed -i "s@YNH_WWW_PATH@$path@g" ../conf/nginx.conf
