@@ -1,0 +1,42 @@
+{
+    "name": "CSL Editor",
+    "id": "csleditor",
+    "description": {
+        "en": "CSL Editor is a visual editor for bibliographic citation styles.",
+        "fr": "CSL Editor est un éditeur visuel pour les styles de citation bibliographique."
+    },
+    "developer": {
+        "name": "scith"
+    },
+    "multi_instance": "false",
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "ask": {
+                    "en": "Choose a domain for CSL Editor",
+                    "fr": "Choisissez un domaine pour CSL Editor"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "ask": {
+                    "en": "Choose a path for CSL Editor",
+                    "fr": "Choisissez un chemin pour CSL Editor"
+                },
+                "example": "/csleditor",
+                "default": "/csleditor"
+            },
+            {
+                "name": "is_public",
+                "ask": {
+                    "en": "Is it a public CSL Editor instance?",
+                    "fr": "Est-ce une instance publique de CSL Editor ?"
+                },
+                "choices": ["Yes", "No"],
+                "default": "No"
+            }
+        ]
+    }
+}
